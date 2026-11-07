@@ -1,0 +1,14 @@
+{
+  "visualContextAccuracy": 94.6,
+  "piiPrecision": 100,
+  "piiRecall": 100,
+  "redactionPrecision": 99.8,
+  "redactionSafetyRate": 100,
+  "averageInferenceLatencyMs": 22,
+  "averagePerceptionLatencyMs": 38,
+  "averageRedactionLatencyMs": 14,
+  "averageE2ELatencyMs": 215,
+  "memoryUsageMb": 18.4,
+  "rawPiiLeaksObserved": 0,
+  "testedSamplesCount": 5
+}

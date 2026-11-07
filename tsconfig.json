@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@privacy-agent/shared-types": ["packages/shared-types/src"],
+      "@privacy-agent/action-protocol": ["packages/action-protocol/src"],
+      "@privacy-agent/privacy-core": ["packages/privacy-core/src"]
+    }
+  },
+  "include": ["packages/**/*", "apps/**/*", "evaluation/**/*", "tests/**/*"]
+}

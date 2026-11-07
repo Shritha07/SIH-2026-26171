@@ -1,0 +1,29 @@
+{
+  "name": "privacy-preserving-browser-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ISRO SIH Problem 26171: On-device Visual Perception for Light-weight Browser Agents",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=apps/web run dev",
+    "build": "npm --workspaces run build",
+    "build:packages": "npm --workspace=@privacy-agent/shared-types --workspace=@privacy-agent/action-protocol --workspace=@privacy-agent/privacy-core run build",
+    "build:web": "npm --workspace=@privacy-agent/web run build",
+    "build:extension": "npm --workspace=@privacy-agent/extension run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "evaluate": "tsx evaluation/scripts/run_benchmarks.ts",
+    "check-key": "node test-gemini-key.mjs"
+  },
+  "devDependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "@jridgewell/sourcemap-codec": "^1.5.0",
+    "@types/node": "^20.11.24",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  }
+}

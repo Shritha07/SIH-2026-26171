@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@privacy-agent/shared-types": ["../../packages/shared-types/src"],
+      "@privacy-agent/action-protocol": ["../../packages/action-protocol/src"],
+      "@privacy-agent/privacy-core": ["../../packages/privacy-core/src"]
+    }
+  },
+  "include": ["src/**/*", "popup.html"]
+}

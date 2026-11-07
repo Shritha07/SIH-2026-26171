@@ -1,0 +1,48 @@
+{
+  "datasetName": "ISRO SIH 26171 Privacy Benchmark Dataset",
+  "version": "1.0",
+  "samples": [
+    {
+      "id": "sample_001",
+      "text": "Please ship invoice to Harish Kumar at harish.kumar@example.com or call +91 9876543210.",
+      "expectedEntities": [
+        { "category": "PERSON", "value": "Harish Kumar" },
+        { "category": "EMAIL", "value": "harish.kumar@example.com" },
+        { "category": "PHONE", "value": "+91 9876543210" }
+      ]
+    },
+    {
+      "id": "sample_002",
+      "text": "Applicant Priya Sharma, DOB: 1998-03-22, Passport: P4391028, Phone: 9811223344.",
+      "expectedEntities": [
+        { "category": "PERSON", "value": "Priya Sharma" },
+        { "category": "DOB", "value": "1998-03-22" },
+        { "category": "GOV_ID", "value": "P4391028" },
+        { "category": "PHONE", "value": "9811223344" }
+      ]
+    },
+    {
+      "id": "sample_003",
+      "text": "Delivery address: 42 Silicon Residency, Koramangala 4th Block, Bengaluru 560034.",
+      "expectedEntities": [
+        { "category": "ADDRESS", "value": "42 Silicon Residency, Koramangala 4th Block, Bengaluru 560034" }
+      ]
+    },
+    {
+      "id": "sample_004",
+      "text": "Security Canary: SUPER_SECRET_HARISH_928374 on test account 5489 1209 4381.",
+      "expectedEntities": [
+        { "category": "SECRET", "value": "SUPER_SECRET_HARISH_928374" },
+        { "category": "GOV_ID", "value": "5489 1209 4381" }
+      ]
+    },
+    {
+      "id": "sample_005",
+      "text": "Payment method: 4111 2222 3333 4444 with billing email accounts@enterprise.org.",
+      "expectedEntities": [
+        { "category": "FINANCIAL", "value": "4111 2222 3333 4444" },
+        { "category": "EMAIL", "value": "accounts@enterprise.org" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@privacy-agent/action-protocol",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "@privacy-agent/shared-types": "*",
+    "zod": "^3.22.4"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
